@@ -44,12 +44,12 @@ export function SideMenu() {
 
       {/* Persistent Desktop Sidebar */}
       <aside className="hidden md:flex flex-col w-[300px] fixed inset-y-0 left-0 z-40 bg-[#050505] border-r border-white/10 p-12 overflow-y-auto">
-        <Link href="/" className="mb-20 group">
-          <h1 className="text-3xl font-black uppercase tracking-tighter leading-none text-[#FDFCF0]">
-            7C&apos;s
-            <br />
-            <span className="text-white/40 group-hover:text-white transition-colors duration-500">Linen</span>
-          </h1>
+        <Link href="/" className="mb-20 group block">
+          <img 
+            src="/7CsLogo.png" 
+            alt="7C's Linen Services" 
+            className="w-48 h-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+          />
         </Link>
 
         <nav className="flex flex-col space-y-6 flex-grow" aria-label="Sidebar Navigation">
@@ -93,8 +93,12 @@ export function SideMenu() {
             className="md:hidden fixed inset-0 z-50 bg-[#FDFCF0] flex flex-col p-8"
           >
             <div className="flex justify-between items-center mb-16">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-3xl font-black uppercase tracking-tighter text-[#050505]">
-                7C&apos;s
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center">
+                <img 
+                  src="/7CsLogo.png" 
+                  alt="7C's Linen Services" 
+                  className="w-32 h-auto object-contain"
+                />
               </Link>
               <button 
                 onClick={() => setMobileMenuOpen(false)}

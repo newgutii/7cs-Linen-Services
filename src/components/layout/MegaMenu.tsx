@@ -62,9 +62,13 @@ export function MegaMenu() {
             href="/"
             aria-label="7C's Linen Service Home"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-2xl font-bold tracking-tighter text-slate-900 flex items-center relative z-50"
+            className="flex items-center relative z-50"
           >
-            7C&apos;s <span className="text-emerald-500 font-medium ml-1">Linen</span>
+            <img 
+              src="/7CsLogo.png" 
+              alt="7C's Linen Services" 
+              className="w-32 h-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}

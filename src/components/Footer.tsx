@@ -7,9 +7,13 @@ export function Footer() {
       <div className="container mx-auto px-6 max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         {/* Brand & Story */}
         <div className="space-y-4">
-          <h3 className="text-2xl font-bold text-white tracking-tighter">
-            7C&apos;s <span className="font-normal text-gray-300">Linen</span>
-          </h3>
+          <Link href="/" className="inline-block mb-4">
+            <img 
+              src="/7CsLogo.png" 
+              alt="7C's Linen Services" 
+              className="w-32 h-auto object-contain brightness-0 invert"
+            />
+          </Link>
           <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
             South Florida’s established leader in premium linen rental services since 2004. 
             Providing 21 years of excellence to restaurants, country clubs, and the hospitality elite.

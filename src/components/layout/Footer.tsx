@@ -8,9 +8,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand Col */}
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold tracking-tighter text-white mb-4">
-              7C&apos;s <span className="text-emerald-500 font-medium">Linen</span>
-            </h3>
+            <Link href="/" className="inline-block mb-4">
+              <img 
+                src="/7CsLogo.png" 
+                alt="7C's Linen Services" 
+                className="w-32 h-auto object-contain brightness-0 invert"
+              />
+            </Link>
             <p className="text-slate-400 font-light text-sm leading-relaxed mb-6">
               The Invisible Standard of Excellence for South Florida's Hospitality & Culinary industries.
             </p>

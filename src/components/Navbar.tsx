@@ -37,12 +37,13 @@ export function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className={cn(
-            "text-2xl font-bold tracking-tighter transition-colors",
-            isScrolled ? "text-deep-navy" : "text-white"
-          )}
+          className="flex items-center transition-opacity hover:opacity-80"
         >
-          7C&apos;s <span className="text-primary font-normal">Linen</span>
+          <img 
+            src="/7CsLogo.png" 
+            alt="7C's Linen Logo" 
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}
